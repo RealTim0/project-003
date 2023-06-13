@@ -33,17 +33,33 @@ h2{
     position: relative;
     padding-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: rgb(13, 88, 185);
 }
 .question::after{
-    content: '+';
+    content: '🔽';
     position: absolute;
     right: 2px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 .answer{
     line-height: 20px;
     height:0px;
     overflow: hidden;
-    transition:2s;
+    transition:1s;
+}
+.active .answer{
+   height: max-content;
+}
+.active .question{
+    font-size:1rem;
+    font-weight: 400;
+    transition:.5s;
+}
+.active .question::after{
+    content:'🔼';
+    font-size: 1rem;
+    color:black;
+    transition: .5s;
 }
