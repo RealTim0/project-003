@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
 }
 .faq{
     border: 3px solid whitesmoke;
@@ -62,4 +62,8 @@ h2{
     font-size: 1rem;
     color:black;
     transition: .5s;
+}
+ol{
+    list-style-position: inside;
+    list-style-type: disc;
 }
